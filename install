@@ -1,0 +1,13 @@
+#!/bin/bash
+PWD=`pwd`
+
+echo "Installing files into your home directory"
+shopt -s dotglob
+for f in *
+do
+  if [ $f != "README.md" ] && [ $f != "install" ] && [ $f != ".git" ]
+  then
+    echo $f
+    ln -sf $PWD/$f ~
+  fi
+done
