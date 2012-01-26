@@ -6,7 +6,7 @@ set background=dark
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "matthew"
+let g:colors_name = "styxlord"
 
 " regular text
 hi Normal guibg=Black guifg=#E0F0E0 gui=NONE ctermfg=LightGrey
